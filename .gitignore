@@ -11,3 +11,4 @@ yarn-error.log*
 # nodemon configurations (optional)
 pids/
 connect.js
+.env
