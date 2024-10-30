@@ -15,7 +15,6 @@ const start = async () => {
 
     await Product.create(ProductJson);
     console.log("Products added successfully");
-
   } catch (error) {
     console.error("Database connection failed:", error);
   }
