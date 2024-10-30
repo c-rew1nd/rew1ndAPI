@@ -16,7 +16,7 @@ app.use("/api/products", products_routes)
 
 const start  = async() => {
     try{
-        await connectDB(process.env.MONGODB_URI);
+        await connectDB(process.env.MONGODB_URL);
         app.listen(PORT , () =>{
             console.log(`${PORT} Yes i am connected`)
         })

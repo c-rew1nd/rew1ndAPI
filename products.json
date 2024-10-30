@@ -1,0 +1,67 @@
+[
+     {
+      "name": "Smartphone Pro",
+      "price": 999,
+      "featured": true,
+      "rating": 4.5,
+      "createdAt": "2024-10-30T12:00:00Z",
+      "company": "apple"
+     },
+     {
+      "name": "Ultra Laptop",
+      "price": 1500,
+      "featured": false,
+      "rating": 4.7,
+      "createdAt": "2024-09-15T10:00:00Z",
+      "company": "dell"
+     },
+     {
+      "name": "Galaxy Phone",
+      "price": 850,
+      "featured": true,
+      "rating": 4.3,
+      "createdAt": "2024-10-01T08:00:00Z",
+      "company": "samsung"
+     },
+     {
+      "name": "Smart TV",
+      "price": 1200,
+      "featured": false,
+      "rating": 4.1,
+      "createdAt": "2024-09-20T15:30:00Z",
+      "company": "mi"
+     },
+     {
+      "name": "Laptop Pro",
+      "price": 1800,
+      "featured": true,
+      "rating": 4.8,
+      "createdAt": "2024-08-10T09:00:00Z",
+      "company": "dell"
+     },
+     {
+      "name": "Earbuds X",
+      "price": 150,
+      "featured": false,
+      "rating": 3.9,
+      "createdAt": "2024-07-22T11:00:00Z",
+      "company": "apple"
+     },
+     {
+      "name": "Smartwatch Plus",
+      "price": 500,
+      "featured": true,
+      "rating": 4.2,
+      "createdAt": "2024-10-25T13:00:00Z",
+      "company": "samsung"
+     },
+     {
+      "name": "Tablet A",
+      "price": 600,
+      "featured": false,
+      "rating": 4.0,
+      "createdAt": "2024-10-15T14:30:00Z",
+      "company": "mi"
+     }
+]
+    
