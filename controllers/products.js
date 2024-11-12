@@ -10,7 +10,15 @@ const getAllProducts = async (req, res) => {
 };
 
 const getAllProductsTesting = async (req, res) => {
-  res.status(200).json({ msg: "I am getAllProductsTesting" });
-};
+   try {
+    const myData = await Product.find(req.query);
+    console.log("getAllProductsTesting: ", req.query);
+    res.status(200).json({ myData });
+   } catch (error) {
+    console.error("Error in getAllProductsTesting:", error);
+    res.status(500).json({ error: "Failed to fetch products with query" });
+   }
+  };
+  
 
 module.exports = { getAllProducts, getAllProductsTesting };
