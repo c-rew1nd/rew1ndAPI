@@ -3,7 +3,7 @@ const Product = require("../model/products");
 const getAllProducts = async (req, res) => {
   try {
     const myData = await Product.find({});
-    res.status(200).json({ myData });
+    res.status(200).json(req.query);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
