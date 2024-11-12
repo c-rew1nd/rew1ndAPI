@@ -12,7 +12,7 @@ const start = async () => {
     console.log("Connecting to:", process.env.MONGODB_URL); // Debugging line
     await connectDB(process.env.MONGODB_URL);
     console.log("Database connected successfully");
-
+    await Product.deleteMany();
     await Product.create(ProductJson);
     console.log("Products added successfully");
   } catch (error) {
