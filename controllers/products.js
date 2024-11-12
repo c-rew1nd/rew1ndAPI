@@ -3,7 +3,7 @@ const Product = require("../model/products");
 
 const getAllProducts = async (req, res) => {
   try {
-    const { company, name, sort } = req.query;
+    const { company, name, sort, select } = req.query;
     const queryObject = {};
 
     if (company) {
@@ -21,6 +21,11 @@ const getAllProducts = async (req, res) => {
       productQuery = productQuery.sort(sortBy);
     }
 
+    if (select) {
+      const fieldsToSelect = select.split(',').join(' ');
+      productQuery = productQuery.select(fieldsToSelect);
+    }
+    
     const myData = await productQuery;
     res.status(200).json({ myData });
   } catch (error) {
